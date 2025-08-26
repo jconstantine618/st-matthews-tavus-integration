@@ -10,7 +10,7 @@ API_KEY = os.environ['TAVUS_API_KEY']
 PERSONA_ID = os.environ['PERSONA_ID']
 REPLICA_ID = os.environ.get('REPLICA_ID')
 
-@app.route('/api/create-conversation', methods=['POST'])
+@app.route('/', methods=['POST'])
 def create_conversation():
     # Build payload with required IDs
     payload = {'persona_id': PERSONA_ID}
